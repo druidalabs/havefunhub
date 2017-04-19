@@ -1,4 +1,4 @@
-# Welcome to HaveFunHub core API
+## Sign up
 
 You can sign up for a developer account to get a token key on https://havefunhub.com/organiser.html
 
