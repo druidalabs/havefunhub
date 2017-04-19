@@ -1,8 +1,8 @@
-###Welcome to HaveFunHub core API###
+### Welcome to HaveFunHub core API
 
-##Domain##
+## Domain
 
-#Events#
-#Places#
-#Promotions#
-#Tickets
+# Events
+# Places
+# Promotions
+# Tickets
