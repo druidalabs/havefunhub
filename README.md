@@ -31,11 +31,6 @@ StripeExample.java
 import java.util.HashMap;
 import java.util.Map;
 
-import com.stripe.Stripe;
-import com.stripe.exception.StripeException;
-import com.stripe.model.Charge;
-import com.stripe.net.RequestOptions;
-
 public class HaveFunHubExample {
 
     public static void main(String[] args) {
