@@ -25,7 +25,7 @@ Please see the [Java API docs](https://druidalabs.com) for the most up-to-date d
 
 ## Usage
 
-StripeExample.java
+HaveFunHubExample.java
 
 ```java
 import java.util.HashMap;
