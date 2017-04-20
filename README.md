@@ -21,7 +21,7 @@ Add this dependency to your project's POM:
 ```
 ## Documentation
 
-Please see the [Java API docs](https://druidalabs.com) for the most up-to-date documentation.
+Please see the [Java API docs](http://druidalabs.com) for the most up-to-date documentation.
 
 ## Usage
 
