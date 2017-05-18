@@ -1,6 +1,25 @@
-## Sign up
+# Sign UP
 
-You can sign up for a developer account to get a token key on https://havefunhub.com/organiser.html
+To start managing your Events, Places, Voucher and Tickets you need to [Create an account](https://havefunhub.com/organiser.html ) 
+
+Then [Login to Console](https://organiser.havefunhub.com) to generate a token to use in your requests when needed.
+
+# Rest API
+
+Check our [API explorer](https://havefunhub.com/api-doc) for the available end points. You can consume services from your any client.
+```javascript
+$.ajax({
+  url: 'https://havefunhub.com/api/events/query',
+  dataType: "json",
+  ...
+  success: function (data) {
+                  //do something with Events' JSON result
+           }
+})
+```
+# Java API
+
+Soon. Working on it :) 
 
 ## Requirements
 
