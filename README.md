@@ -1,6 +1,6 @@
 # Sign UP
 
-To start managing your Events, Places, Voucher and Tickets you need to [Create an account](https://havefunhub.com/organiser.html ) 
+To start managing your Events, Places, Voucher and Tickets you need to [Create an account](https://havefunhub.com/tickets.html ) 
 
 Then [Login to Console](https://organiser.havefunhub.com) to generate a token to use in your requests when needed.
 
