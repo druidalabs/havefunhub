@@ -45,7 +45,7 @@ curl -XPOST  -v -H "X-AUTH-TOKEN:Token_to_be_replaced" "https://test.havefunhub.
 ```
 The below code will edit an event:
 ```javascript
-curl -XPUT  -v -H "X-AUTH-TOKEN:Enter_token_here" "https://test.havefunhub.com/services/event/35" -H "Content-Type: application/json"  -d '{"hasPromo":true,"placeId":Info_to_be_changed,"start":"2018-08-09T10:00:00+0000","description":"Annual village get together with drinks and music\n","userName":"Your_username","funIndicator":0,"phone":"Info_to_be_changed","name":"Info_to_be_changed","end":"2018-08-09T23:00:00+0000","place":{"country":"United Kingdom","address":"Info_to_be_changed","city":"Info_to_be_changed","hasPromo":false,"latitude":Info_to_be_changed,"placeId":35,"active":true,"description":"Mells barn","priceIndicator":0,"userName":"Your_username","phone":"Info_to_be_changed","name":"Info_to_be_changed","category":" #Disco","longitude":Info_to_be_changed},"category":" #Disco","checkins":0}'
+curl -XPUT  -v -H "X-AUTH-TOKEN:Enter_token_here" "https://test.havefunhub.com/services/event/35" -H "Content-Type: application/json"  -d '{"hasPromo":true,"placeId":Info_to_be_changed,"start":"2018-08-09T10:00:00+0000","description":"Annual village get together with drinks and music\n","userName":"Your_username","funIndicator":0,"phone":"Info_to_be_changed","name":"Info_to_be_changed","end":"2018-08-09T23:00:00+0000","place":{"country":"United Kingdom","address":"Info_to_be_changed","city":"Info_to_be_changed","hasPromo":false,"latitude":51.508530,"placeId":35,"active":true,"description":"Mells barn","priceIndicator":0,"userName":"Your_username","phone":"Info_to_be_changed","name":"Info_to_be_changed","category":" #Disco","longitude": -0.076132},"category":" #Disco","checkins":0}'
 ```
 
 The below code will delete an event:
@@ -81,12 +81,12 @@ curl -XGET "https://test.havefunhub.com/api/places/query?Lat=23.234534&Long=-21.
 
 The below code will create a place:
 ```javascript
-curl -XPOST  -v -H "X-AUTH-TOKEN: token_to_be_replaced" "https://test.havefunhub.com/services/places" -H "Content-Type: application/json"  -d '{"name":"Info_to_be_replaced","description":"Info_to_be_replaced","category":"Info_to_be_replaced","priceIndicator":0,"address":"Info_to_be_replaced"}’,"address2":"Info_to_be_replaced","postCode":"Info_to_be_replaced","city":"Info_to_be_replaced","latitude":Info_to_be_replaced,  e.g 51.573857"longitude":Info_to_be_replaced, e.g 31.329409"country":"England","Phone": "Info_to_be_replaced"}'
+curl -XPOST  -v -H "X-AUTH-TOKEN: token_to_be_replaced" "https://test.havefunhub.com/services/places" -H "Content-Type: application/json"  -d '{"name":"Info_to_be_replaced","description":"Info_to_be_replaced","category":"Info_to_be_replaced","priceIndicator":0,"address":"Info_to_be_replaced"}’,"address2":"Info_to_be_replaced","postCode":"Info_to_be_replaced","city":"Info_to_be_replaced","latitude":51.508530"longitude":-0.076132"country":"England","Phone": "Info_to_be_replaced"}'
 ```
 
 The below code will edit a place:
 ```javascript
-curl -XPUT  -v -H "X-AUTH-TOKEN:Insert_token_here" "https://test.havefunhub.com/services/place/35" -H "Content-Type: application/json"  -d '{"name":"Info_to_be_changed","description":"Info_to_be_changed","category":" #Bar","priceIndicator":0,"address":"Info_to_be_changed","address2":"Info_to_be_changed","postCode":"Info_to_be_changed","city":"Info_to_be_changed","latitude":Info_to_be_changed,"longitude":Info_to_be_changed,"active":true,"hasPromo":false,"country":"Info_to_be_changed","phone":null,"userName":"Your_username"}'
+curl -XPUT  -v -H "X-AUTH-TOKEN:Insert_token_here" "https://test.havefunhub.com/services/place/35" -H "Content-Type: application/json"  -d '{"name":"Info_to_be_changed","description":"Info_to_be_changed","category":" #Bar","priceIndicator":0,"address":"Info_to_be_changed","address2":"Info_to_be_changed","postCode":"Info_to_be_changed","city":"Info_to_be_changed","latitude":51.508530,"longitude":-0.076132,"active":true,"hasPromo":false,"country":"Info_to_be_changed","phone":null,"userName":"Your_username"}'
 ```
 The below code will delete a place:
 ```javascript
