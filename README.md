@@ -8,7 +8,7 @@ Then [Login to Console](https://organiser.havefunhub.com) to generate a token to
 
 
 ### Events
-
+Replace {eventId} by your current id; for example 30
 #### GET
 The below code will show events that are happening at any time:
 ```javascript
@@ -41,7 +41,7 @@ curl -XGET "https://test.havefunhub.com/api/events/query?Lat=51.5487&Long=67.243
 ```
 Use the below code to find tickets linked to a certain event:
 ```javascript
-curl -XGET "https://test.havefunhub.com/api/event/30/tickets"
+curl -XGET "https://test.havefunhub.com/api/event/{eventId}/tickets"
 ```
 
 Use the below code to find a promo linked to an event:
