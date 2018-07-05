@@ -21,7 +21,7 @@ curl -XGET  "https://test.havefunhub.com/api/events/query"
 ```
 The below code will show you events you made:
 ```javascript
-curl -XGET "https://test.havefunhub.com/api/events/query?user=Gary"
+curl -XGET "https://test.havefunhub.com/api/events/query?user={username}"
 ```
 The below code will show all events wth promos linked to them:
 ```javascript
@@ -56,12 +56,12 @@ curl -XPOST  -v -H "X-AUTH-TOKEN:Token_to_be_replaced" "https://test.havefunhub.
 #### PUT
 The below code will edit an event:
 ```javascript
-curl -XPUT  -v -H "X-AUTH-TOKEN:Enter_token_here" "https://test.havefunhub.com/services/event/35" -H "Content-Type: application/json"  -d '{"hasPromo":true,"placeId":Info_to_be_changed,"start":"2018-08-09T10:00:00+0000","description":"Annual village get together with drinks and music\n","userName":"Your_username","funIndicator":0,"phone":"Info_to_be_changed","name":"Info_to_be_changed","end":"2018-08-09T23:00:00+0000","place":{"country":"United Kingdom","address":"Info_to_be_changed","city":"Info_to_be_changed","hasPromo":false,"latitude":51.508530,"placeId":35,"active":true,"description":"Mells barn","priceIndicator":0,"userName":"Your_username","phone":"Info_to_be_changed","name":"Info_to_be_changed","category":" #Disco","longitude": -0.076132},"category":" #Disco","checkins":0}'
+curl -XPUT  -v -H "X-AUTH-TOKEN:Enter_token_here" "https://test.havefunhub.com/services/event/{eventID}" -H "Content-Type: application/json"  -d '{"hasPromo":true,"placeId":Info_to_be_changed,"start":"2018-08-09T10:00:00+0000","description":"Annual village get together with drinks and music\n","userName":"Your_username","funIndicator":0,"phone":"Info_to_be_changed","name":"Info_to_be_changed","end":"2018-08-09T23:00:00+0000","place":{"country":"United Kingdom","address":"Info_to_be_changed","city":"Info_to_be_changed","hasPromo":false,"latitude":51.508530,"placeId":35,"active":true,"description":"Mells barn","priceIndicator":0,"userName":"Your_username","phone":"Info_to_be_changed","name":"Info_to_be_changed","category":" #Disco","longitude": -0.076132},"category":" #Disco","checkins":0}'
 ```
 #### DELETE
 The below code will delete an event:
 ```javascript
-curl -XDELETE  -v -H "X-AUTH-TOKEN:Your_token_here" "https://test.havefunhub.com/services/event/Enter_the_ID" -H "Content-Type: application/json"  
+curl -XDELETE  -v -H "X-AUTH-TOKEN:Your_token_here" "https://test.havefunhub.com/services/event/{eventID}" -H "Content-Type: application/json"  
 ```
 ### Places
 #### GET
@@ -87,7 +87,7 @@ curl -XGET "https://test.havefunhub.com/api/places/query?Lat=23.234534&Long=-21.
 ```
 Use the below code to find a promo linked to a place:
 ```javascript
-curl -XGET "https://test.havefunhub.com/api/place/36/promos"
+curl -XGET "https://test.havefunhub.com/api/place/{placeID}/promos"
 ```
 #### POST
 The below code will create a place:
@@ -97,12 +97,12 @@ curl -XPOST  -v -H "X-AUTH-TOKEN: token_to_be_replaced" "https://test.havefunhub
 #### PUT
 The below code will edit a place:
 ```javascript
-curl -XPUT  -v -H "X-AUTH-TOKEN:Insert_token_here" "https://test.havefunhub.com/services/place/35" -H "Content-Type: application/json"  -d '{"name":"Info_to_be_changed","description":"Info_to_be_changed","category":" #Bar","priceIndicator":0,"address":"Info_to_be_changed","address2":"Info_to_be_changed","postCode":"Info_to_be_changed","city":"Info_to_be_changed","latitude":51.508530,"longitude":-0.076132,"active":true,"hasPromo":false,"country":"Info_to_be_changed","phone":null,"userName":"Your_username"}'
+curl -XPUT  -v -H "X-AUTH-TOKEN:Insert_token_here" "https://test.havefunhub.com/services/place/{placeID}" -H "Content-Type: application/json"  -d '{"name":"Info_to_be_changed","description":"Info_to_be_changed","category":" #Bar","priceIndicator":0,"address":"Info_to_be_changed","address2":"Info_to_be_changed","postCode":"Info_to_be_changed","city":"Info_to_be_changed","latitude":51.508530,"longitude":-0.076132,"active":true,"hasPromo":false,"country":"Info_to_be_changed","phone":null,"userName":"Your_username"}'
 ```
 #### DELETE
 The below code will delete a place:
 ```javascript
-curl -XDELETE  -v -H "X-AUTH-TOKEN: " "https://test.havefunhub.com/services/place/Enter_the_ID" -H "Content-Type: application/json"
+curl -XDELETE  -v -H "X-AUTH-TOKEN: " "https://test.havefunhub.com/services/place/{placeID}" -H "Content-Type: application/json"
 ```
 
 
