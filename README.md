@@ -6,6 +6,12 @@ Then [Login to Console](https://organiser.havefunhub.com) to generate a token to
 
 # Rest API
 
+## curl
+
+```curl
+curl -XGET -H "accept: application/json" "https://test.havefunhub.com/api/events/query?when=any"
+```
+
 Check our [API explorer](https://havefunhub.com/api-doc) for the available end points. You can consume services from your any client.
 ```javascript
 $.ajax({
