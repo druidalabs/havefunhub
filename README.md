@@ -39,6 +39,15 @@ The below code will show you events within a certain distance (km) from a chosen
 ```javascript
 curl -XGET "https://test.havefunhub.com/api/events/query?Lat=51.5487&Long=67.243456&Dist=10"
 ```
+Use the below code to find tickets linked to a certain event:
+```javascript
+curl -XGET "https://test.havefunhub.com/api/event/30/tickets"
+```
+### Promo
+Use the below code to find a promo linked to an event:
+```javascript
+curl -XGET "https://test.havefunhub.com/api/event/30/promos"
+```
 #### POST
 The code below wll create an event:
 ```javascript
@@ -76,6 +85,10 @@ curl -XGET "https://test.havefunhub.com/api/places/query?user=Felipe"
 ```javascript
 curl -XGET "https://test.havefunhub.com/api/places/query?Lat=23.234534&Long=-21.24435&Dist=1000"
 ```
+Use the below code to find a promo linked to a place:
+```javascript
+curl -XGET "https://test.havefunhub.com/api/place/36/promos"
+```
 #### POST
 The below code will create a place:
 ```javascript
@@ -92,20 +105,9 @@ The below code will delete a place:
 curl -XDELETE  -v -H "X-AUTH-TOKEN: " "https://test.havefunhub.com/services/place/Enter_the_ID" -H "Content-Type: application/json"
 ```
 
-### Tickets
-Use the below code to find tickets linked to a certain event:
-```javascript
-curl -XGET "https://test.havefunhub.com/api/event/30/tickets"
-```
-### Promo
-Use the below code to find a promo linked to an event:
-```javascript
-curl -XGET "https://test.havefunhub.com/api/event/30/promos"
-```
-Use the below code to find a promo linked to a place:
-```javascript
-curl -XGET "https://test.havefunhub.com/api/place/36/promos"
-```
+
+
+
 
 ## javascript
 
