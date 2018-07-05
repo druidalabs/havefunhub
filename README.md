@@ -111,7 +111,7 @@ curl -XDELETE  -v -H "X-AUTH-TOKEN: " "https://test.havefunhub.com/services/plac
 
 ## javascript
 
-Check our [API explorer](https://havefunhub.com/api-doc) for the available end points. You can consume services from your any client.
+Check our [API explorer](https://test.havefunhub.com/api-doc) for the available end points. You can consume services from your any client.
 ```javascript
 $.ajax({
   url: 'https://havefunhub.com/api/events/query',
