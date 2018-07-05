@@ -10,18 +10,17 @@ Then [Login to Console](https://organiser.havefunhub.com) to generate a token to
 ### events
 
 The below code will show events that are happening at any time:
-
 ```javascript
 curl -XGET -H "accept: application/json" "https://test.havefunhub.com/api/events/query?when=any"
 ```
 
 The below code will show you all events:
 ```javascript
-curl -XGET -H “accept: application/json” “https://test.havefunhub.com/api/events/query”
+curl -XGET -H “accept: application/json" "https://test.havefunhub.com/api/events/query"
 ```
 The below code will show you events you made:
 ```javascript
-curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/events/query?user=your_username"
+curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/events/query?user=Gary"
 ```
 The below code will show all events wth promos linked to them:
 ```javascript
@@ -33,11 +32,11 @@ curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/users/
 ```
 The below code will show you all events with a certain keyword in them:
 ```javascript
-curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/events/query?q= YOUR KEYWORD HERE"
+curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/events/query?q=party"
 ```
 The below code will show you events within a certain distance (km) from a chosen long and lat position:
 ```javascript
-curl -XGET -H "accept: application/json" "https://test.havefunhub.com/api/events/query?Lat=1&Long=1&Dist=100"
+curl -XGET -H "accept: application/json" "https://test.havefunhub.com/api/events/query?Lat=51.5487&Long=67.243456&Dist=10"
 ```
 
 ### places
@@ -45,11 +44,11 @@ curl -XGET -H "accept: application/json" "https://test.havefunhub.com/api/events
 
 The below code will show you all places:
  ```javascript
- curl -XGET -H “accept: application/json” “https://test.havefunhub.com/api/places/query”
+ curl -XGET -H "accept: application/json" "https://test.havefunhub.com/api/places/query"
  ```
  The below code will find you places you made:
 ```javascript
-curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/places/query?user=Your_user_name_here"
+curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/places/query?user=Felipe"
  ```
  The below code will find you all places with promos linked to them:
  ```javascript
@@ -57,14 +56,26 @@ curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/places
  ```
  The below code will find you all locations with a chosen keyword:
  ```javascript
- curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/places/query?q= YOUR KEYWORD HERE"
+ curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/places/query?q=town"
 ```
  The below code will find you any locations within a give dstance(km) around a point of long and lat:
 ```javascript
-curl -XGET -H "accept: application/json" "https://test.havefunhub.com/api/places/query?Lat=1&Long=1&Dist=1000"
+curl -XGET -H "accept: application/json" "https://test.havefunhub.com/api/places/query?Lat=23.234534&Long=-21.24435&Dist=1000"
 ```
-
-
+### Tickets
+Use the below code to find tickets linked to a certain event:
+```javascript
+curl -XGET -H "accept: application/json"  "https://test.havefunhub.com/api/event/30/tickets"
+```
+### Promo
+Use the below code to find a promo linked to an event:
+```javascript
+curl -XGET -H "accept: application/json"  "https://test.havefunhub.com/api/event/30/promos"
+```
+Use the below code to find a promo linked to a place:
+```javascript
+curl -XGET -H "accept: application/json"  "https://test.havefunhub.com/api/place/36/promos"
+```
 
 Check our [API explorer](https://havefunhub.com/api-doc) for the available end points. You can consume services from your any client.
 ```javascript
