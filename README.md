@@ -16,23 +16,23 @@ curl -XGET -H "accept: application/json" "https://test.havefunhub.com/api/events
 
 The below code will show you all events:
 ```javascript
-curl -XGET -H “accept: application/json" "https://test.havefunhub.com/api/events/query"
+curl -XGET -H "accept: application/json" "https://test.havefunhub.com/api/events/query"
 ```
 The below code will show you events you made:
 ```javascript
-curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/events/query?user=Gary"
+curl -XGET -H "accept: application/json" "https://test.havefunhub.com/api/events/query?user=Gary"
 ```
 The below code will show all events wth promos linked to them:
 ```javascript
-curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/users/query?hasPromo=true"
+curl -XGET -H "accept: application/json" "https://test.havefunhub.com/api/users/query?hasPromo=true"
 ```
 The below code will show you all events without promo linked to them:
 ```javascript
-curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/users/query?hasPromo=false"
+curl -XGET -H "accept: application/json" "https://test.havefunhub.com/api/users/query?hasPromo=false"
 ```
 The below code will show you all events with a certain keyword in them:
 ```javascript
-curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/events/query?q=party"
+curl -XGET -H "accept: application/json" "https://test.havefunhub.com/api/events/query?q=party"
 ```
 The below code will show you events within a certain distance (km) from a chosen long and lat position:
 ```javascript
@@ -48,15 +48,15 @@ The below code will show you all places:
  ```
  The below code will find you places you made:
 ```javascript
-curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/places/query?user=Felipe"
+curl -XGET -H "accept: application/json" "https://test.havefunhub.com/api/places/query?user=Felipe"
  ```
  The below code will find you all places with promos linked to them:
  ```javascript
- curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/places/query?hasPromo=true"
+ curl -XGET -H "accept: application/json" "https://test.havefunhub.com/api/places/query?hasPromo=true"
  ```
  The below code will find you all locations with a chosen keyword:
  ```javascript
- curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/places/query?q=town"
+ curl -XGET -H "accept: application/json" "https://test.havefunhub.com/api/places/query?q=town"
 ```
  The below code will find you any locations within a give dstance(km) around a point of long and lat:
 ```javascript
