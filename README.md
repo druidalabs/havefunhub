@@ -16,24 +16,30 @@ curl -XGET -H "accept: application/json" "https://test.havefunhub.com/api/events
 ```
 
 The below code will show you all events:
+```javascript
 curl -XGET -H “accept: application/json” “https://test.havefunhub.com/api/events/query”
-
-The below code will show you events you made:
-curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/events/query?user=your_username"
-
-The below code will show all events wth promos linked to them:
-curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/users/query?hasPromo=true"
-
-The below code will show you all events without promo linked to them:
-curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/users/query?hasPromo=false"
-
-The below code will show you all events with a certain keyword in them:
-curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/events/query?q= YOUR KEYWORD HERE"
-
-The below code will show you events within a certain distance (km) from a chosen long and lat position:
-curl -XGET -H "accept: application/json" "https://test.havefunhub.com/api/events/query?Lat=1&Long=1&Dist=100"
-
 ```
+The below code will show you events you made:
+```javascript
+curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/events/query?user=your_username"
+```
+The below code will show all events wth promos linked to them:
+```javascript
+curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/users/query?hasPromo=true"
+```
+The below code will show you all events without promo linked to them:
+```javascript
+curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/users/query?hasPromo=false"
+```
+The below code will show you all events with a certain keyword in them:
+```javascript
+curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/events/query?q= YOUR KEYWORD HERE"
+```
+The below code will show you events within a certain distance (km) from a chosen long and lat position:
+```javascript
+curl -XGET -H "accept: application/json" "https://test.havefunhub.com/api/events/query?Lat=1&Long=1&Dist=100"
+```
+
 ### places
 
 ```javascript
