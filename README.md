@@ -77,6 +77,8 @@ Use the below code to find a promo linked to a place:
 curl -XGET -H "accept: application/json"  "https://test.havefunhub.com/api/place/36/promos"
 ```
 
+
+
 Check our [API explorer](https://havefunhub.com/api-doc) for the available end points. You can consume services from your any client.
 ```javascript
 $.ajax({
