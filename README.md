@@ -9,7 +9,31 @@ Then [Login to Console](https://organiser.havefunhub.com) to generate a token to
 ## curl
 
 ```javascript
+The below code will show events that are happening at any time:
 curl -XGET -H "accept: application/json" "https://test.havefunhub.com/api/events/query?when=any"
+
+The below code will show you all events:
+curl -XGET -H “accept: application/json” “https://test.havefunhub.com/api/events/query”
+
+The below code will show you events you made:
+curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/events/query?user=your_username"
+
+The below code will show all events wth promos linked to them:
+curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/users/query?hasPromo=true"
+
+The below code will show you all events without promo linked to them:
+curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/users/query?hasPromo=false"
+
+The below code will show you all events with a certain keyword in them:
+curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/events/query?q= YOUR KEYWORD HERE"
+
+The below code will show you events within a certain distance (km) from a chosen long and lat position:
+curl -XGET -H "accept: application/json" "https://test.havefunhub.com/api/events/query?Lat=1&Long=1&Dist=100"
+
+
+
+
+
 ```
 
 Check our [API explorer](https://havefunhub.com/api-doc) for the available end points. You can consume services from your any client.
