@@ -43,7 +43,7 @@ Use the below code to find tickets linked to a certain event:
 ```javascript
 curl -XGET "https://test.havefunhub.com/api/event/30/tickets"
 ```
-### Promo
+
 Use the below code to find a promo linked to an event:
 ```javascript
 curl -XGET "https://test.havefunhub.com/api/event/30/promos"
