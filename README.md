@@ -42,23 +42,28 @@ curl -XGET -H "accept: application/json" "https://test.havefunhub.com/api/events
 
 ### places
 
-```javascript
+
 The below code will show you all places:
+ ```javascript
  curl -XGET -H “accept: application/json” “https://test.havefunhub.com/api/places/query”
- 
+ ```
  The below code will find you places you made:
- curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/places/query?user=Your_user_name_here"
- 
+```javascript
+curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/places/query?user=Your_user_name_here"
+ ```
  The below code will find you all places with promos linked to them:
+ ```javascript
  curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/places/query?hasPromo=true"
- 
+ ```
  The below code will find you all locations with a chosen keyword:
-   curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/places/query?q= YOUR KEYWORD HERE"
-
- The below code will find you any locations within a give dstance(km) around a point of long and lat:
- curl -XGET -H "accept: application/json" "https://test.havefunhub.com/api/places/query?Lat=1&Long=1&Dist=1000"
-
+ ```javascript
+ curl -XGET -H "accept; application/json" "https://test.havefunhub.com/api/places/query?q= YOUR KEYWORD HERE"
 ```
+ The below code will find you any locations within a give dstance(km) around a point of long and lat:
+```javascript
+curl -XGET -H "accept: application/json" "https://test.havefunhub.com/api/places/query?Lat=1&Long=1&Dist=1000"
+```
+
 
 
 Check our [API explorer](https://havefunhub.com/api-doc) for the available end points. You can consume services from your any client.
