@@ -8,7 +8,7 @@ Then [Login to Console](https://organiser.havefunhub.com) to generate a token to
 
 ## curl
 
-```curl
+```javascript
 curl -XGET -H "accept: application/json" "https://test.havefunhub.com/api/events/query?when=any"
 ```
 
