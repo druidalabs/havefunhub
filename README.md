@@ -7,7 +7,7 @@ Then [Login to Console](https://organiser.havefunhub.com) to generate a token to
 # Rest API
 
 ## curl
-
+### for events
 ```javascript
 The below code will show events that are happening at any time:
 curl -XGET -H "accept: application/json" "https://test.havefunhub.com/api/events/query?when=any"
