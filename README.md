@@ -81,19 +81,7 @@ curl -XGET "https://test.havefunhub.com/api/places/query?Lat=23.234534&Long=-21.
 
 The below code will create a place:
 ```javascript
-curl -XPOST  -v -H "X-AUTH-TOKEN: token_to_be_replaced" "https://test.havefunhub.com/services/places" -H "Content-Type: application/json"  -d '{"name":"Info_to_be_replaced",
-"description":"Info_to_be_replaced",
-"category":"Info_to_be_replaced",
-"priceIndicator":0,
-"address":"Info_to_be_replaced"}’
-,"address2":"Info_to_be_replaced",
-"postCode":"Info_to_be_replaced",
-"city":"Info_to_be_replaced",
-"latitude":Info_to_be_replaced,  e.g 51.573857
-"longitude":Info_to_be_replaced, e.g 31.329409
-"country":"England",
-"Phone": "Info_to_be_replaced"
-}'
+curl -XPOST  -v -H "X-AUTH-TOKEN: token_to_be_replaced" "https://test.havefunhub.com/services/places" -H "Content-Type: application/json"  -d '{"name":"Info_to_be_replaced","description":"Info_to_be_replaced","category":"Info_to_be_replaced","priceIndicator":0,"address":"Info_to_be_replaced"}’,"address2":"Info_to_be_replaced","postCode":"Info_to_be_replaced","city":"Info_to_be_replaced","latitude":Info_to_be_replaced,  e.g 51.573857"longitude":Info_to_be_replaced, e.g 31.329409"country":"England","Phone": "Info_to_be_replaced"}'
 ```
 
 The below code will edit a place:
