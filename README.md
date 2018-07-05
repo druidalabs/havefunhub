@@ -8,7 +8,7 @@ Then [Login to Console](https://organiser.havefunhub.com) to generate a token to
 
 
 ### Events
-Replace {eventId} by your current id; for example 30
+Replace {eventId} by your current id; for example 30, and {username} for your current username for example Gary.
 #### GET
 The below code will show events that are happening at any time:
 ```javascript
@@ -46,17 +46,17 @@ curl -XGET "https://test.havefunhub.com/api/event/{eventId}/tickets"
 
 Use the below code to find a promo linked to an event:
 ```javascript
-curl -XGET "https://test.havefunhub.com/api/event/30/promos"
+curl -XGET "https://test.havefunhub.com/api/event/{eventID}/promos"
 ```
 #### POST
 The code below wll create an event:
 ```javascript
-curl -XPOST  -v -H "X-AUTH-TOKEN:Token_to_be_replaced" "https://test.havefunhub.com/services/events" -H "Content-Type: application/json"  -d '{"placeId":37,"start":"2018-08-09T10:00:00+0000","description":"fun for all","phone":"01373 813 721","name":"enter_name_of_event","category": "Disco", "end":"2018-08-09T23:00:00+0000"}'
+curl -XPOST  -v -H "X-AUTH-TOKEN:Token_to_be_replaced" "https://test.havefunhub.com/services/events" -H "Content-Type: application/json"  -d '{"placeId":{placeID},"start":"2018-08-09T10:00:00+0000","description":"fun for all","phone":"01373 813 721","name":"enter_name_of_event","category": "Disco", "end":"2018-08-09T23:00:00+0000"}'
 ```
 #### PUT
 The below code will edit an event:
 ```javascript
-curl -XPUT  -v -H "X-AUTH-TOKEN:Enter_token_here" "https://test.havefunhub.com/services/event/{eventID}" -H "Content-Type: application/json"  -d '{"hasPromo":true,"placeId":Info_to_be_changed,"start":"2018-08-09T10:00:00+0000","description":"Annual village get together with drinks and music\n","userName":"Your_username","funIndicator":0,"phone":"Info_to_be_changed","name":"Info_to_be_changed","end":"2018-08-09T23:00:00+0000","place":{"country":"United Kingdom","address":"Info_to_be_changed","city":"Info_to_be_changed","hasPromo":false,"latitude":51.508530,"placeId":35,"active":true,"description":"Mells barn","priceIndicator":0,"userName":"Your_username","phone":"Info_to_be_changed","name":"Info_to_be_changed","category":" #Disco","longitude": -0.076132},"category":" #Disco","checkins":0}'
+curl -XPUT  -v -H "X-AUTH-TOKEN:Enter_token_here" "https://test.havefunhub.com/services/event/{eventID}" -H "Content-Type: application/json"  -d '{"hasPromo":true,"placeId":Info_to_be_changed,"start":"2018-08-09T10:00:00+0000","description":"Annual village get together with drinks and music\n","userName":"Your_username","funIndicator":0,"phone":"Info_to_be_changed","name":"Info_to_be_changed","end":"2018-08-09T23:00:00+0000","place":{"country":"United Kingdom","address":"Info_to_be_changed","city":"Info_to_be_changed","hasPromo":false,"latitude":51.508530,"placeId":{placeID},"active":true,"description":"Mells barn","priceIndicator":0,"userName":"Your_username","phone":"Info_to_be_changed","name":"Info_to_be_changed","category":" #Disco","longitude": -0.076132},"category":" #Disco","checkins":0}'
 ```
 #### DELETE
 The below code will delete an event:
@@ -64,6 +64,7 @@ The below code will delete an event:
 curl -XDELETE  -v -H "X-AUTH-TOKEN:Your_token_here" "https://test.havefunhub.com/services/event/{eventID}" -H "Content-Type: application/json"  
 ```
 ### Places
+Replace {placeID} for your id for example 33, also replace {username} for your username for example Tim.
 #### GET
 The below code will show you all places:
  ```javascript
@@ -71,7 +72,7 @@ The below code will show you all places:
  ```
  The below code will find you places you made:
 ```javascript
-curl -XGET "https://test.havefunhub.com/api/places/query?user=Felipe"
+curl -XGET "https://test.havefunhub.com/api/places/query?user={username}"
  ```
  The below code will find you all places with promos linked to them:
  ```javascript
@@ -111,7 +112,7 @@ curl -XDELETE  -v -H "X-AUTH-TOKEN: " "https://test.havefunhub.com/services/plac
 
 ## javascript
 
-Check our [API explorer](https://test.havefunhub.com/api-doc) for the available end points. You can consume services from your any client.
+Check our [API explorer](https://havefunhub.com/api-doc) for the available end points. You can consume services from your any client.
 ```javascript
 $.ajax({
   url: 'https://havefunhub.com/api/events/query',
