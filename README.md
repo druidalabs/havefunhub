@@ -6,7 +6,7 @@ Then [Login to Console](https://organiser.havefunhub.com) to generate a token to
 
 # Rest API
 
-## curl
+
 ### Events
 
 #### GET
@@ -92,9 +92,6 @@ The below code will delete a place:
 curl -XDELETE  -v -H "X-AUTH-TOKEN: " "https://test.havefunhub.com/services/place/Enter_the_ID" -H "Content-Type: application/json"
 ```
 
-
-
-
 ### Tickets
 Use the below code to find tickets linked to a certain event:
 ```javascript
@@ -110,7 +107,7 @@ Use the below code to find a promo linked to a place:
 curl -XGET "https://test.havefunhub.com/api/place/36/promos"
 ```
 
-
+## javascript
 
 Check our [API explorer](https://havefunhub.com/api-doc) for the available end points. You can consume services from your any client.
 ```javascript
@@ -123,17 +120,17 @@ $.ajax({
            }
 })
 ```
-# Java API
+## Java API
 
 Soon. Working on it :) 
 
-## Requirements
+### Requirements
 
 Java 1.7 or later
 
-## Installation
+### Installation
 
-### Maven users
+#### Maven users
 
 Add this dependency to your project's POM:
 
@@ -144,11 +141,11 @@ Add this dependency to your project's POM:
   <version>3.0.0</version>
 </dependency>
 ```
-## Documentation
+### Documentation
 
 Please see the [Java API docs](http://druidalabs.com) for the most up-to-date documentation.
 
-## Usage
+### Usage
 
 HaveFunHubExample.java
 
