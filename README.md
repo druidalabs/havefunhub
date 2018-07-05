@@ -5,7 +5,9 @@ To start managing your Events, Places, Voucher and Tickets you need to [Create a
 Then [Login to Console](https://organiser.havefunhub.com) to generate a token to use in your requests when needed.
 
 # Rest API
+Go to our [API Explorer](https://test.havefunhub.com/api-doc)
 
+Additional information about parameters [in this guide](https://docs.google.com/document/d/1IaTtZkc7Y9mAsOTxDUIZ0FlKQ-VBZX59RMI1nUAbOMI)
 
 ### Events
 Replace {eventId} by your current id; for example 30, and {username} for your current username for example Gary.
