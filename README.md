@@ -4,10 +4,12 @@ To start managing your Events, Places, Voucher and Tickets you need to [Create a
 
 Then [Login to Console](https://organiser.havefunhub.com) to generate a token to use in your requests when needed.
 
-# Rest API
+# Documentation
 Go to our [API Explorer](https://test.havefunhub.com/api-doc)
 
 Additional information about parameters [in this guide](https://docs.google.com/document/d/1IaTtZkc7Y9mAsOTxDUIZ0FlKQ-VBZX59RMI1nUAbOMI)
+
+Generally spaking most GET dont require authentication. On the other hand, any POST, PUT or DELETE will require the request to be authenticated via token. 
 
 ### Events
 Replace {eventId} by your current id; for example 30, and {username} for your current username for example Gary.
@@ -51,7 +53,7 @@ Use the below code to find a promo linked to an event:
 curl -XGET "https://test.havefunhub.com/api/event/{eventID}/promos"
 ```
 #### POST
-The code below wll create an event MAKE SURE YOU ENTER A TOKEN (strings):
+The code below wll create an event. The -H parameter is passing **X-AUTH-TOKEN** as a header. Reaplce *Token_to_be_replaced* by your actual token. Check [this guide to generate yours](https://docs.google.com/document/d/1IaTtZkc7Y9mAsOTxDUIZ0FlKQ-VBZX59RMI1nUAbOMI)
 ```javascript
 curl -XPOST  -v -H "X-AUTH-TOKEN:Token_to_be_replaced" "https://test.havefunhub.com/services/events" -H "Content-Type: application/json"  -d '{"placeId":{placeID},"start":"2018-08-09T10:00:00+0000","description":"fun for all","phone":"01373 813 721","name":"enter_name_of_event","category": "Disco", "end":"2018-08-09T23:00:00+0000"}'
 ```
