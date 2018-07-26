@@ -1,15 +1,21 @@
+# Welcome
+
+This guide is oriented to developers who want to start integrating against our core API in our sandbox environment (testing env).
+
+We expose our core resources as RESTful API. All responses are serialised in JSON format. 
+
+Generally spaking GET verbs dont require authentication. On the other hand, any POST, PUT or DELETE will require the request to be authenticated via JWT token. 
+
 # Sign UP
 
-To start managing your Events, Places, Voucher and Tickets you need to [Create an account](https://havefunhub.com/tickets.html ) 
+To start managing your Events, Places, Tickets, Promotions and Vouchers you need to [Create an account](https://test.havefunhub.com/tickets.html ) 
 
-Then [Login to Console](https://organiser.havefunhub.com) to generate a token to use in your requests when needed.
+Then [Login to Console](https://test.organiser.havefunhub.com) to generate a token to use in your requests when needed.
 
 # Documentation
 Go to our [API Explorer](https://test.havefunhub.com/api-doc)
 
 Additional information about parameters [in this guide](https://docs.google.com/document/d/1IaTtZkc7Y9mAsOTxDUIZ0FlKQ-VBZX59RMI1nUAbOMI)
-
-Generally spaking most GET dont require authentication. On the other hand, any POST, PUT or DELETE will require the request to be authenticated via token. 
 
 ### Events
 Replace {eventId} by your current id; for example 30, and {username} for your current username for example Gary.
