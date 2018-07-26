@@ -10,7 +10,7 @@ Generally spaking GET verbs dont require authentication. On the other hand, any 
 
 Events always have a Place associated with it. We support queries on both. 
 Places can have Promotions. Events, on the other hand, can have both Promotions and Tickets.
-Vouchers can be claimed against Promotions. Purchasing tickets via checkout is only supported from any \*.havefunhub.com domain 
+Vouchers can be claimed against Promotions.
 
 # Sign UP
 
