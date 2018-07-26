@@ -1,10 +1,16 @@
 # Welcome
 
-This guide is oriented to developers who want to start integrating against our core API in our sandbox environment (testing env).
+This guide is oriented to developers who want to start integrating against our core API in our testing environment. 
 
 We expose our core resources as RESTful API. All responses are serialised in JSON format. 
 
 Generally spaking GET verbs dont require authentication. On the other hand, any POST, PUT or DELETE will require the request to be authenticated via JWT token. 
+
+# Getting started
+
+Events always have a Place associated with it. We support queries on both. 
+Places can have Promotions. Events, on the other hand, can have both Promotions and Tickets.
+Vouchers can be claimed against Promotions. Purchasing tickets via checkout is only supported from any \*.havefunhub.com domain 
 
 # Sign UP
 
